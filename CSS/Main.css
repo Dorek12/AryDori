@@ -1,0 +1,337 @@
+body {
+	background-color: #f0f0f0;
+	margin-top: 150px;
+	display: flex;
+	flex-direction: column;
+	min-height: 90vh;
+}
+
+/* Für die Zahlen Warenkorb und Wunschliste im header*/
+
+.itemCount {
+	background-color: red;
+	color: white;
+	border-radius: 50%;
+	width: 17px; /* width und height für die Größe des Kreises */
+	height: 17px; 
+	text-align: center;
+	line-height: 17px; /* größe der Zahl im Kreis */
+	font-size: 12px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	transform: translate(50%, -50%);
+}
+
+.nav-link {
+	display: inline-block;
+	position: relative;
+}
+
+.nav-icon {
+	width: 30px;
+	height: 30px;
+}
+
+.container {
+	flex-grow: 1;
+}
+
+/* Der Footer bleibt am unteren Rand der Seite */
+footer {
+	flex-shrink: 0;
+}
+
+/* Wichtig für Container zum Beispiel auf Mainpage */
+#mainCard .card {
+    display: flex;
+    height: 100%;
+    width: 22rem;
+}
+
+#mainCard .card-body {
+    flex: 1;
+    background-color: #F8F8F8;
+}
+
+#mainCard .card-footer {
+	background-color: #E5E5E5;
+}
+
+#mainCard .image-container {
+	padding: 15px;
+    display: flex;
+    align-items: center; /* Zentriert das Bild vertikal im Container */
+    justify-content: center; /* Zentriert das Bild horizontal im Container */	
+    min-height: 300px;
+}
+
+#mainCard .image-container img:hover {
+    transform: scale(1.1);
+}
+
+#mainCard .image-container img {
+    max-width: 240px;
+    max-height: 300px;
+    height: auto;
+    width: auto;
+}
+
+#registration-container, #login-container {
+	max-width: 500px;
+	margin: 0 auto;
+	padding: 20px;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+	background-color: #ffffff;
+}
+
+#registration-container .form-group, #login-container .form-group {
+	margin-bottom: 10px;
+}
+
+#birth_day, #birth_month, #birth_year {
+	text-align: center;
+}
+
+#btnReg, #btnLog {
+	width: 100%;
+	margin-top: 10px;
+	text-align: center;
+}
+
+#carouselMain .carousel-item img {
+	width: 1050px;
+	height: 280px;
+}
+
+#product-carousel {
+	margin-bottom: 20px;
+	max-width: 500px;
+}
+
+#product-carousel .carousel-inner {
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+#product-carousel .carousel-item img {
+	max-height: 400px;
+	margin: 0 auto;
+	width: auto;
+}
+
+.carousel-control-prev, .carousel-control-next {
+	width: auto;
+	padding: 0;
+}
+
+.thumbnail-row {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+}
+
+.thumbnail {
+	margin: 0 5px;
+	cursor: pointer;
+}
+
+.thumbnail img {
+	max-height: 80px;
+}
+
+.product-title {
+	font-size: 24px;
+	color: #333333;
+	margin-bottom: 10px;
+}
+
+.product-description {
+	color: #555555;
+	margin-bottom: 20px;
+}
+
+.product-price {
+	font-size: 20px;
+	font-weight: bold;
+	color: #000000;
+	margin-bottom: 10px;
+}
+
+.product-details {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.technical-details {
+	background-color: #f5f5f5;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.review-section {
+	margin-top: 30px;
+}
+
+.review-form {
+	margin-bottom: 20px;
+}
+
+.btn-buy {
+	background-color: #f0c14b;
+	border-color: #a88734; 
+	color: #111; 
+}
+
+.btn-buy:hover {
+	background-color: #f7dfa5; 
+	border-color: #a88734; 
+	color: #111;
+}
+
+/*ProfileView-CSS*/
+
+.table {
+	width: 100%;
+}
+
+.table td {
+	padding: 10px 15px;
+	cursor: pointer;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+.table td a {
+	display: block;
+	color: #333;
+	text-decoration: none;
+}
+
+.table td.selected {
+	background-color: #c0c0c0;
+	color: #fff;
+}
+
+.table td:hover {
+	background-color: #f0f0f0;
+}
+
+.product-buttons {
+    display: flex;
+    align-items: center;
+}
+
+
+.product-buttons form {
+    margin-right: 10px; 
+}
+
+.error_container {
+	text-align: center;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+	background-color: white;
+}
+
+.error_code {
+	font-size: 64px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.error_message {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.smiley {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.link {
+	text-decoration: none;
+	color: #007bff;
+	font-weight: bold;
+}
+
+/*ErrorpageView */
+
+#error-container body {
+	font-family: Arial, sans-serif;
+	background-color: #f5f5f5;
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+.error_container {
+	text-align: center;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+	background-color: white;
+}
+
+.error_code {
+	font-size: 64px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.error_message {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.smiley {
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.link {
+	text-decoration: none;
+	color: #007bff;
+	font-weight: bold;
+}
+
+.div-video {
+    text-align: center;
+}
+
+.video {
+    max-width: 80%;     
+}
+
+/*CheckoutView-CSS und ConfirmationView-CSS*/
+
+.btn-block {
+    width: 100% !important;
+}
+
+.selected-payment.payment-method td:hover {
+	background-color: #f0f0f0;
+}
+
+.selected-payment.payment-method td {
+    background-color: #c0c0c0;
+    font-weight: bold;
+}
+
+.scrollable-content { /* ist für die Scrollbar in der Kaufview zuständig */
+  max-height: 350px; 
+  overflow-y: auto;
+}
+
+#registration-container .form-control, #login-container .form-control {
+	margin-top: 5px; /*NEUER CODE 03.09.2023 ACHTUNG NEUMANN!*/
+}
+
+/* Ratingsterne */
+.checked {
+  color: orange;
+}

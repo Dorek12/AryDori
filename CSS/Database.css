@@ -1,0 +1,38 @@
+table, th, td {
+      padding: 10px;
+      border: 1px solid black; 
+      border-collapse: collapse;
+}
+
+table{
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+input{
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+p{
+	margin-left: 5px;
+	color: red;
+}
+
+h2{
+	margin-left: 5px;
+}
+
+select{
+	margin-left: 5px;
+	margin-bottom:10px;
+}
+
+.dbContainer {
+	flex-grow: 1;
+}
+
+footer {
+	flex-shrink: 0;
+}
